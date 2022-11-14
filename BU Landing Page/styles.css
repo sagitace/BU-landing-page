@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid,
+.navbar,
+.col-12-footer {
+    background-color: #bcf1ff !important;
+}
+
+.container-fluid {
+    height: auto;
+}
+
+.navbar {
+    position: relative;
+    min-height: 50px;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, .5);
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-brand img {
+    width: 18%;
+}
+
+.cyr {
+    color: rgb(4, 4, 125);
+    text-shadow: 1px 1px rgb(0, 0, 0);
+}
+
+.navbar-brand {
+    margin: 0;
+    padding: 0;
+    width: 200px;
+}
+
+@media(max-width:574px) {
+    .ul-bg {
+        background-color: rgb(255, 255, 255);
+    }
+}
+
+@media(min-width:992px) {
+    .active {
+        background-color: rgba(0, 42, 255, 0.626);
+        text-decoration: none;
+        border-radius: 30px;
+        font-weight: 600;
+        color: white !important;
+    }
+    .active:hover {
+        background-color: rgb(0, 42, 255);
+        color: white;
+    }
+}
+
+.nav-item .dropdown-toggle:hover {
+    color: rgb(114, 114, 114) !important;
+}
+
+.body_text {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.btn {
+    font-size: 2vmin;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 15px 30px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 15px 30px 0 rgb(0 0 0 / 20%);
+    -webkit-transition: .3s all ease;
+    -o-transition: .3s all ease;
+    transition: .3s all ease;
+    position: relative;
+}
+
+.dropdown-menu li {
+    position: relative;
+}
+
+.submenu {
+    left: 100%;
+    position: absolute;
+    display: none;
+    top: -7px;
+    background-color: aliceblue;
+}
+
+.navbar-nav li:hover>ul.submenu {
+    display: block;
+}
+
+.dropdown-menu:hover {
+    background-color: aliceblue;
+    transition: 0.7s;
+}
+
+.submenu:hover {
+    background-color: whitesmoke;
+    transition: 0.7s;
+}
+
+.row .col-12-footer {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    font-size: 2vw;
+    text-align: center;
+    font-weight: 500;
+}
+
+@media(max-width: 575px) {
+    .body_text {
+        margin-bottom: 20px;
+    }
+}
+
+.image {
+    overflow: hidden;
+    position: relative;
+}
+
+.image img {
+    width: 100%;
+    transition: all 2s ease-in-out;
+    transition: .5s;
+}
+
+.text-box {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 52, 68, 0.5);
+    transition: 0.5s
+}
+
+.text-box h1 {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    font-size: 3vw;
+    left: 71%;
+    width: 100%;
+    color: #FFF;
+    font-family: arial;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.text-box p {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 60%;
+    font-size: 3vw;
+    left: 100%;
+    width: 100%;
+    color: #FFF;
+    font-family: arial;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.image:hover .text-box {
+    left: 0%;
+}
+
+.image:hover img {
+    transform: scale(1.2)
+}
+
+@media (max-width:600px) {
+    .text-box h1 {
+        left: 90%;
+    }
+    .text-box p {
+        left: 90%;
+    }
+}
+
+@media (max-width:900px) {
+    .text-box h1 {
+        left: 80%;
+    }
+    .text-box p {
+        left: 80%;
+    }
+}
+
+.cta {
+    position: relative;
+    margin: auto;
+    padding: 5px 22px;
+    transition: all 0.2s ease;
+}
+
+.cta:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.5);
+    width: 56px;
+    height: 40px;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.cta span {
+    position: relative;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 900;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.cta svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #111;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.cta:hover:before {
+    width: 100%;
+    background: #fcfcfc;
+    color: white !important;
+}
+
+.cta:hover svg {
+    transform: translateX(0);
+}
+
+.cta:active {
+    transform: scale(0.96);
+}
